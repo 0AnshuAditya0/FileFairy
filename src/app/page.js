@@ -1,74 +1,18 @@
-import Image from "next/image";
-import { Button } from "@/components/ui/button"
-import {
-  Card,
-  CardContent,
-  CardDescription,
-  CardFooter,
-  CardHeader,
-  CardTitle,
-} from "@/components/ui/card"
-import {
-  AlertDialog,
-  AlertDialogAction,
-  AlertDialogCancel,
-  AlertDialogContent,
-  AlertDialogDescription,
-  AlertDialogFooter,
-  AlertDialogHeader,
-  AlertDialogTitle,
-  AlertDialogTrigger,
-} from "@/components/ui/alert-dialog"
+import React from "react";
 
-
-export default function Home() {
+const Home = () => {
   return (
-    <div className="grid grid-rows-[20px_1fr_20px] items-center justify-items-center min-h-screen p-8 pb-20 gap-16 sm:p-20 font-[family-name:var(--font-geist-sans)]">
-      <main className="flex flex-col gap-8 row-start-2 items-center sm:items-start">
-
-        <h3 className="text-2xl">Hello, ShadCN</h3>
-
-        <div>
-      <Button>Click me</Button>
-    </div>
-
-    <Card>
-  <CardHeader>
-    <CardTitle>Card Title</CardTitle>
-    <CardDescription>Card Description</CardDescription>
-  </CardHeader>
-  <CardContent>
-    <p>Card Content</p>
-  </CardContent>
-  <CardFooter>
-    <p>Card Footer</p>
-  </CardFooter>
-</Card>
-
-<AlertDialog>
-  <AlertDialogTrigger>Open</AlertDialogTrigger>
-  <AlertDialogContent>
-    <AlertDialogHeader>
-      <AlertDialogTitle>Are you absolutely sure?</AlertDialogTitle>
-      <AlertDialogDescription>
-        This action cannot be undone. This will permanently delete your account
-        and remove your data from our servers.
-      </AlertDialogDescription>
-    </AlertDialogHeader>
-    <AlertDialogFooter>
-      <AlertDialogCancel>Cancel</AlertDialogCancel>
-      <AlertDialogAction>Continue</AlertDialogAction>
-    </AlertDialogFooter>
-  </AlertDialogContent>
-</AlertDialog>
-
-
-
-       
-      
-       
-      </main>
-     
+    <div className="flex flex-col items-center min-h-screen p-6 sm:p-8 ">
+      <div className="w-full max-w-2xl p-8 space-y-6 flex justify-center items-center rounded-lg">
+        <div className="flex flex-col text-4xl sm:text-4xl md:flex-row md:text-5xl md:leading-normal font-bold text-center tracking-wide text-blue-500 items-center">
+          <span className="text-black md:mr-4">Welcome to   {" "} </span>
+          <span className="text-transparent bg-gradient-to-r from-blue-400 via-blue-500 to-blue-700 bg-clip-text transition-colors duration-300 ">
+            File Fairy
+          </span>
+        </div>
+      </div>
     </div>
   );
-}
+};
+
+export default Home;
