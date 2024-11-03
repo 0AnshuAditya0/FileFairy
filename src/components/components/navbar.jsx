@@ -15,7 +15,7 @@ const Navbar = () => {
   const toggleMenu = () => setIsOpen(!isOpen);
 
   return (
-    <nav className="w-full bg-gradient-to-r from-blue-500 via-blue-600 to-blue-700 dark:from-black dark:via-gray-900 dark:to-gray-700 shadow-lg py-4 px-6">
+    <nav className="w-full bg-gradient-to-r from-blue-500 via-blue-600 to-blue-700 dark:from-black dark:via-gray-900 dark:to-violet-600 shadow-lg py-4 px-6">
       <div className="max-w-7xl mx-auto flex items-center justify-between">
         <a href="/">
           <div className="text-2xl font-bold text-white">File Fairy</div>
